@@ -1,5 +1,5 @@
 {
-  "name": "uikit",
+  "name": "components",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -7,7 +7,7 @@
     "storybook": "start-storybook -p 8080"
   },
   "keywords": [],
-  "author": "",
+  "author": "Felipe Carvalho",
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-centered": "^5.3.18",
