@@ -1,10 +1,11 @@
 {
-  "name": "components",
+  "name": "components-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "components lib",
   "main": "dist/index.js",
   "scripts": {
-    "storybook": "start-storybook -p 8080"
+    "storybook": "start-storybook -p 8080",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Felipe Carvalho",
@@ -15,10 +16,13 @@
     "@storybook/react": "^5.3.18",
     "@types/react": "^16.9.34",
     "@types/styled-components": "^5.1.0",
+    "babel-jest": "^25.4.0",
     "babel-loader": "^8.1.0",
+    "jest": "^25.4.0",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-icons": "^3.9.0",
+    "react-test-renderer": "^16.13.1",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3"
   },
