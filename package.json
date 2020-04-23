@@ -1,10 +1,11 @@
 {
-  "name": "components-lib",
+  "name": "components-react-lib-styled",
   "version": "1.0.0",
   "description": "components lib",
   "main": "dist/index.js",
   "scripts": {
     "storybook": "start-storybook -p 8080",
+    "build": "tsc -p .",
     "test": "jest"
   },
   "keywords": [],
