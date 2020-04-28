@@ -1,4 +1,4 @@
-<h1 align="center">{c:#007fff}Stylized React Component Lib{/c}</h1>
+<h1 align="center">Stylized React Component Lib</h1>
 
 ## Description
 Library created for the purpose of personal improvement in the creation of stylized components and publication of libs in npm. The goal here is just learning, but if this lib is useful to you feel free to make suggestions and improve it so that it suits your problems and those of the community.
