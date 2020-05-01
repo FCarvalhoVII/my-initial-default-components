@@ -1,14 +1,28 @@
 {
   "name": "components-react-lib-styled",
-  "version": "1.0.0",
-  "description": "components lib",
+  "version": "1.0.2",
+  "description": "component library for applications focused on dark theme",
   "main": "dist/index.js",
   "scripts": {
     "storybook": "start-storybook -p 8080",
     "build": "tsc -p .",
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "front-end", 
+    "components", 
+    "reactjs", 
+    "styled-components", 
+    "css", 
+    "styles",
+    "dark-theme",
+    "buttons",
+    "modal",
+    "checkbox",
+    "radio",
+    "input",
+    "card"
+  ],
   "author": "Felipe Carvalho",
   "license": "ISC",
   "devDependencies": {
