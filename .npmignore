@@ -3,3 +3,5 @@ node_modules
 src
 tsconfig.json
 .github
+jest.config.js
+babel.config.js
