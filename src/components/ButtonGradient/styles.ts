@@ -1,18 +1,18 @@
 import styled from 'styled-components'
-import { lighten, darken, readableColor } from 'polished'
+import { readableColor } from 'polished'
 
 import { Props } from './index'
 
 export const Button = styled.button<Props>`
-    background: linear-gradient(to top, #000046, #1cb5e0);
+    background: linear-gradient(to ${props => props.gradientColor});
     color: ${({ color }: Props) => readableColor(color as string, '#fff', '#090909')};
-    box-shadow: 1px 2px 2px 1px #000046;
+    box-shadow: 1px 2px 2px 1px ${props => props.shadowColor};
 
     padding: 5px 10px;
     font-weight: 600;
     letter-spacing: 0.02em;
 
-    border-radius: 20px;
+    border-radius: ${props => props.borderRadius || '20px'};
     border: 1px;
 
     cursor: pointer;
