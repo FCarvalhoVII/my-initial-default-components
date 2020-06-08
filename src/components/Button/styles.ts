@@ -12,7 +12,7 @@ export const Container = styled.button<Props>`
     font-weight: 600;
     letter-spacing: 0.07em;
 
-    border-radius: 50px;
+    border-radius: ${props => props.borderRadius || '50px'};
     border: ${props => props.outlined ? `2px solid ${props.backgroundColor}` : 'none'};
 
     cursor: pointer;
