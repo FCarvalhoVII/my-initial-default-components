@@ -8,24 +8,24 @@ export const Label = styled.label<ILabel>`
     margin-bottom: 2rem;
 
     > input {
-        background-color: #1c1b20;
+        background-color: ${props => props.backgroundColor};
         border: 2px solid #39383d;
-        border-radius: 5px;
+        border-radius: ${props => props.borderRadius};
 
         padding: 16px;
         padding-left: ${props => props.icon ? '40px' : '16px'};
 
-        color: #fff;
+        color: ${props => props.color};
         font-size: 16px;
 
         transition: 180ms ease-in-out;
 
         &::placeholder {
-            color: rgba(255, 255, 255, 0.2);
+            color: ${props => props.placeholderColor};
         }
 
         ~ svg {
-            fill: rgba(255, 255, 255, 0.2);
+            fill: ${props => props.placeholderColor};
             position: absolute;
             left: 12px;
             top: 16px;
@@ -35,10 +35,10 @@ export const Label = styled.label<ILabel>`
         }
 
         &:focus {
-            border: 2px solid ${props => props.color};
+            border: 2px solid ${props => props.inputColor};
 
             ~ svg {
-                fill: ${props => props.color};
+                fill: ${props => props.inputColor};
             }
         }
     }
