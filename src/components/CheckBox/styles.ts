@@ -13,11 +13,11 @@ export const Label = styled.label<ILabel>`
     cursor: pointer;
     user-select: none;
 
-    color: #fff;
+    color: ${props => props.color || '#fff'};
     font-size: 16px;
 
     &:hover span, input:checked ~ span {
-        background-color: ${props => props.color}
+        background-color: ${props => props.markColor || '#007fff'}
     }
 `;
 

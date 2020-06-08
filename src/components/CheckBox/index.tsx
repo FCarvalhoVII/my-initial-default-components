@@ -4,9 +4,10 @@ import { Label, Box, Mark } from './styles'
 
 export interface Props {
     label: string
+    color?: string
     name: string
     value: any
-    color?: string
+    markColor?: string
     defaultChecked?: boolean
     checked?: boolean
     readOnly?: boolean
@@ -14,6 +15,7 @@ export interface Props {
 }
 
 export interface ILabel {
+    markColor?: string
     color?: string
 }
 
@@ -22,7 +24,7 @@ export interface IBox {
 }
 
 export const CheckBox = forwardRef(
-    ({ label, name, value, color = '#007fff', ...props }: Props, ref) => {
+    ({ label, name, color = '#fff', value, markColor = '#007fff', ...props }: Props, ref) => {
         const { readOnly, onChange } = props
 
         return (
@@ -30,6 +32,7 @@ export const CheckBox = forwardRef(
                 onClick={readOnly ? () => {} : onChange}
                 htmlFor={name}
                 color={color}
+                markColor={markColor}
             >
                 { label }
 
