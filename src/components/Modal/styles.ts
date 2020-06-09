@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { IFullScreen } from './index'
+import { IFullScreen, IContainer, IClose } from './index'
 
 export const FullScreen = styled.div<IFullScreen>`
     position: fixed;
@@ -29,14 +29,14 @@ export const FullScreen = styled.div<IFullScreen>`
     }
 `;
 
-export const Container = styled.div`
+export const Container = styled.div<IContainer>`
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: 20px;
 
-    background-color: #2f2e35;
+    background-color: ${props => props.backgroundColor};
     border-radius: 8px;
 
     animation: slideIn 350ms cubic-bezier(0.42, 0, 0.21, 1) 1;
@@ -57,21 +57,21 @@ export const Container = styled.div`
         }
     }
 
-    color: #d5d5d5;
+    color: ${props => props.color};
 
     h2 {
-        color: #fff;
+        color: ${props => props.colorTitle};
         margin-bottom: 28px;
     }
 `;
 
-export const Close = styled.button`
+export const Close = styled.button<IClose>`
     cursor: pointer;
     align-items: flex-end;
 
     margin-bottom: 24px;
 
-    color: rgba(255, 255, 255, 0.3);
+    color: ${props => props.closeColor};
 
     background: transparent;
 
@@ -80,6 +80,6 @@ export const Close = styled.button`
     font-size: 16px;
 
     &:hover {
-        color: #fff;
+        opacity: 0.6;
     }
 `;
