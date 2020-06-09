@@ -6,3 +6,4 @@ export { CheckBox } from './components/CheckBox';
 export { Input } from './components/Input';
 export { Modal } from './components/Modal';
 export { Card } from './components/Card';
+export { Title } from './components/Title';
