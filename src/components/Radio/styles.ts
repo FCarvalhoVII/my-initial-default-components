@@ -13,11 +13,11 @@ export const Label = styled.label`
     cursor: pointer;
     user-select: none;
 
-    color: #fff;
+    color: ${(props: Props) => props.color};
     font-size: 16px;
     
     &:hover span, input:checked ~ span {
-        background-color: ${(props: Props) => props.color};
+        background-color: ${(props: Props) => props.radioColor};
     }
 `;
 
@@ -54,7 +54,7 @@ export const Mark = styled.span`
 
         width: 4px;
         height: 8px;
-        border: solid #fff;
+        border: solid ${(props: Props) => props.markColor};
         border-width: 0 3px 3px 0;
 
         transform: rotate(45deg);

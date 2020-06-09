@@ -8,6 +8,8 @@ export interface Props {
     name: string
     value: any
     color?: string
+    radioColor?: string
+    markColor?: string
     defaultChecked?: boolean
     checked?: boolean
     readOnly?: boolean
@@ -15,15 +17,28 @@ export interface Props {
 }
 
 const RadioWrapper = forwardRef(
-    ({ label, name, value, color = '#007fff', ...props }: Props, ref) => {
+    ({ 
+        label, 
+        name, 
+        value,
+        color = '#fff',
+        radioColor = '#007fff',
+        markColor = '#fff',
+        ...props 
+    }: Props, ref) => {
         const { readOnly, onChange } = props
 
         return (
-            <Label onClick={readOnly ? () => {} : onChange} htmlFor={name} color={color}>
+            <Label 
+                onClick={readOnly ? () => {} : onChange} 
+                htmlFor={name}
+                color={color}
+                radioColor={radioColor}
+            >
                 { label }
 
                 <Radio { ...props } ref={ref} name={name} value={value} />
-                <Mark />
+                <Mark markColor={markColor} />
             </Label>
         )
     }
