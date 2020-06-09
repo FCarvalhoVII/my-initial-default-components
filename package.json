@@ -1,7 +1,7 @@
 {
   "name": "components-react-lib-styled",
   "version": "1.0.2",
-  "description": "component library for applications focused on dark theme",
+  "description": "Component library for applications",
   "main": "dist/index.js",
   "scripts": {
     "storybook": "start-storybook -p 8080",
@@ -25,6 +25,7 @@
   ],
   "author": "Felipe Carvalho",
   "license": "ISC",
+  "repository": "FCarvalhoVII/my-initial-default-components",
   "devDependencies": {
     "@storybook/addon-centered": "^5.3.18",
     "@storybook/addon-info": "^5.3.18",
