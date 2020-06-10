@@ -4,6 +4,7 @@ import { FullScreen, Container, Close } from './styles'
 
 export interface Props {
     backgroundColor?: string
+    borderRadius?: string
     color?: string
     colorTitle?: string
     closeColor?: string
@@ -14,6 +15,7 @@ export interface Props {
 
 export interface IContainer {
     backgroundColor?: string
+    borderRadius?: string
     color?: string
     colorTitle?: string
 }
@@ -28,6 +30,7 @@ export interface IFullScreen {
 
 export const Modal: React.FC<Props> = ({
     backgroundColor = '#2f2e35',
+    borderRadius = '8px',
     color = '#d5d5d5',
     colorTitle = '#fff',
     closeColor = 'rgba(255, 255, 255, 0.3)',
@@ -40,7 +43,8 @@ export const Modal: React.FC<Props> = ({
     return (
         <FullScreen open={open}>
             <Container 
-                backgroundColor={backgroundColor} 
+                backgroundColor={backgroundColor}
+                borderRadius={borderRadius}
                 title={title}
                 colorTitle={colorTitle}
                 color={color} {...props} 

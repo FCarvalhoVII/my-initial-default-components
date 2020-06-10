@@ -37,7 +37,7 @@ export const Container = styled.div<IContainer>`
     padding: 20px;
 
     background-color: ${props => props.backgroundColor};
-    border-radius: 8px;
+    border-radius: ${props => props.borderRadius};
 
     animation: slideIn 350ms cubic-bezier(0.42, 0, 0.21, 1) 1;
 
