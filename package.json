@@ -1,6 +1,6 @@
 {
   "name": "components-react-lib-styled",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Component library for applications",
   "main": "dist/index.js",
   "scripts": {
@@ -21,7 +21,9 @@
     "checkbox",
     "radio",
     "input",
-    "card"
+    "card",
+    "separator",
+    "title"
   ],
   "author": "Felipe Carvalho",
   "license": "ISC",
