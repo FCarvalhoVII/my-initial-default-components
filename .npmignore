@@ -5,3 +5,6 @@ tsconfig.json
 .github
 jest.config.js
 babel.config.js
+
+.storybook
+stories
