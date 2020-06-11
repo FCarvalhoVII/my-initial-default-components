@@ -37,7 +37,7 @@ import { Button } from 'components-react-lib-styled'
     </Button>
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 
 ### Button Gradient
@@ -63,7 +63,7 @@ import { ButtonGradient } from 'components-react-lib-styled'
     </ButtonGradient>
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Card
 
@@ -90,7 +90,7 @@ import { Card } from 'components-react-lib-styled'
     </Card>
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Check Box
 
@@ -121,7 +121,7 @@ import { CheckBox } from 'components-react-lib-styled'
     />
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Input
 
@@ -163,7 +163,7 @@ const [inputValue, setInputValue] = useState('')
     />
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Modal
 
@@ -205,7 +205,7 @@ const [open, setOpen] = useState(false)
     </div>
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Radio
 
@@ -237,7 +237,7 @@ import { Radio } from 'components-react-lib-styled'
     />
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Separator
 
@@ -255,7 +255,7 @@ import { Separator } from 'components-react-lib-styled'
     <Separator color = '#1a1a1f, #007fff, #1a1a1f' />
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ### Title
 
@@ -278,7 +278,7 @@ import { Title } from 'components-react-lib-styled'
     </Title>
 ```
 
-***You can only use components in their standard form without having to pass these settings**
+***You can use the components in their standard form without having to pass these settings**
 
 ## Running Storybook to view components
 To run the **Storybook** use the command ```npm run storybook``` in the application's root directory.
